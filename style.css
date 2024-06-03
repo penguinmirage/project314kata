@@ -1,0 +1,302 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("TTLakes-Italic.eot");
+  src: local("TT Lakes Italic"), local("TTLakes-Italic"),
+    url("TTLakes-Italic.eot?#iefix") format("embedded-opentype"),
+    url("TTLakes-Italic.woff") format("woff"),
+    url("TTLakes-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.burger {
+  border-radius: 90px;
+  background-size: 1px;
+}
+
+body {
+  font-family: "TTLakes", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  overflow: hidden;
+  min-width: 320px;
+  max-width: 1120px;
+}
+
+.upperMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 88px;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+.burgerLink:hover,
+.repairLink:hover,
+.checkStatusLink:hover,
+.call:hover,
+.chat:hover,
+.profile:hover {
+  cursor: pointer;
+}
+
+.logoPic {
+  height: 50.81px;
+}
+
+.dividerPic {
+  height: 32px;
+  width: 2px;
+}
+
+.mainMenu,
+.main,
+.footer {
+  background-color: #f8f8f8;
+}
+
+.titleHighlight {
+  margin-left: 0;
+  margin-right: 6px;
+  height: 40px;
+  width: 4px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  margin-left: 12px;
+}
+
+.mainTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 40px;
+  align-items: center;
+  margin-left: 6px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu {
+  display: flex;
+  overflow-x: scroll;
+  /*overflow: hidden;*/
+  text-shadow: none;
+  background-color: transparent;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 16px;
+}
+
+.menuText {
+  white-space: nowrap;
+  color: #7e7e82;
+}
+
+button:hover {
+  border: 2px solid #b8ffec;
+  border-radius: 2px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+button {
+  background-color: #f8f8f8;
+  border-color: transparent;
+  height: 40px;
+  font-size: 16px;
+  margin-right: 2px;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+button:active {
+  cursor: pointer;
+  color: turquoise;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 320px;
+  }
+
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 320px;
+  }
+  .paragraph {
+    width: 312px;
+    height: auto;
+  }
+  .hidden1,
+  .hidden2 {
+    display: none;
+  }
+
+  .desktopHeaderMenu,
+  .dividerPadViewPic,
+  .call,
+  .chat,
+  .profile {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+
+  .upperMenu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .logoPic {
+    margin-right: 250px;
+    flex-shrink: 0;
+  }
+
+  .menu {
+    margin-top: 0px;
+    overflow-x: auto;
+  }
+  .article {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 1119px;
+  }
+  .paragraph {
+    width: 312px;
+    height: auto;
+    margin-left: 0px;
+  }
+  .hidden2 {
+    display: none;
+  }
+  .mainImage {
+    width: 360px;
+    height: 208px;
+  }
+  .desktopHeaderMenu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1120px) {
+  body {
+    width: 1120px;
+  }
+
+  .upperMenu {
+    display: none;
+  }
+
+  .mainMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 42px;
+  }
+  .desktopHeaderMenu {
+    height: 40px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .repairMenuItemIcon,
+  .checkStatusMenuItemIcon {
+    margin-right: 32px;
+  }
+
+  .repairMenuItem,
+  .checkStatusMenuItem {
+    margin-right: 8px;
+    text-decoration: none;
+    color: #1b1c21;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 1063px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 0px;
+  }
+
+  .article {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-width: 1120px;
+    margin-right: 32px;
+  }
+  .hidden1,
+  .hidden2 {
+    display: block;
+  }
+  .paragraph {
+    width: 490px;
+    height: auto;
+  }
+  .mainImage {
+    width: 531.35px;
+    height: 307px;
+  }
+  .dividerPadViewPic,
+  .call,
+  .chat,
+  .profile {
+    display: none;
+  }
+}
+
+.readMore {
+  display: flex;
+  flex-direction: row;
+}
+
+.paragraph {
+  margin: 16px;
+  background-color: #f8f8f8;
+  font-family: "TTLakes", sans-serif;
+}
+
+.readMoreText {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  padding: 6px 0;
+  width: 100px;
+  height: 24px;
+  white-space: nowrap;
+  cursor: not-allowed;
+  border-radius: 0;
+  text-decoration: none;
+  color: #1b1c21;
+}
+.readMoreText:hover {
+  cursor: pointer;
+}
+
+.readMorePic {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
