@@ -193,6 +193,7 @@ button:active {
   .chat,
   .profile {
     display: block;
+    //должно работать
   }
 }
 @media screen and (min-width: 1120px) {
