@@ -121,34 +121,70 @@ button:active {
   box-shadow: none;
 }
 
-@media screen and (min-width: 0) {
+.readMore {
+  display: flex;
+  flex-direction: row;
+}
+
+.paragraph {
+  margin: 16px;
+  background-color: #f8f8f8;
+  font-family: "TTLakes", sans-serif;
+}
+
+.readMoreText {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  padding: 6px 0;
+  width: 100px;
+  height: 24px;
+  white-space: nowrap;
+  cursor: not-allowed;
+  border-radius: 0;
+  text-decoration: none;
+  color: #1b1c21;
+}
+.readMoreText:hover {
+  cursor: pointer;
+}
+
+.readMorePic {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/*@media screen and (min-width: 0) {
   body {
     width: 320px;
-  }
+  }*/
 
-  .article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    min-width: 320px;
-  }
-  .paragraph {
-    width: 312px;
-    height: auto;
-  }
-  .hidden1,
-  .hidden2 {
-    display: none;
-  }
-
-  .desktopHeaderMenu,
-  .dividerPadViewPic,
-  .call,
-  .chat,
-  .profile {
-    display: none;
-  }
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 320px;
 }
+.paragraph {
+  width: 312px;
+  height: auto;
+}
+.hidden1,
+.hidden2 {
+  display: none;
+}
+
+.desktopHeaderMenu,
+.dividerPadViewPic,
+.call,
+.chat,
+.profile {
+  display: none;
+}
+/*}*/
 @media screen and (min-width: 768px) {
   body {
     width: 768px;
@@ -269,40 +305,4 @@ button:active {
   .profile {
     display: none;
   }
-}
-
-.readMore {
-  display: flex;
-  flex-direction: row;
-}
-
-.paragraph {
-  margin: 16px;
-  background-color: #f8f8f8;
-  font-family: "TTLakes", sans-serif;
-}
-
-.readMoreText {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 8px;
-  padding: 6px 0;
-  width: 100px;
-  height: 24px;
-  white-space: nowrap;
-  cursor: not-allowed;
-  border-radius: 0;
-  text-decoration: none;
-  color: #1b1c21;
-}
-.readMoreText:hover {
-  cursor: pointer;
-}
-
-.readMorePic {
-  width: 24px;
-  height: 24px;
-  margin-left: 16px;
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
