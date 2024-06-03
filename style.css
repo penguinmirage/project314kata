@@ -20,8 +20,7 @@ body {
   padding: 0;
   background-color: #f8f8f8;
   overflow: hidden;
-  min-width: 320px;
-  max-width: 1120px;
+  width: 320px;
 }
 
 .upperMenu {
@@ -122,10 +121,9 @@ button:active {
   box-shadow: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 0) {
   body {
-    min-width: 320px;
-    max-width: 768px;
+    width: 320px;
   }
 
   .article {
@@ -153,8 +151,7 @@ button:active {
 }
 @media screen and (min-width: 768px) {
   body {
-    min-width: 768px;
-    max-width: 1120px;
+    width: 768px;
   }
 
   .upperMenu {
@@ -191,10 +188,16 @@ button:active {
   .desktopHeaderMenu {
     display: none;
   }
+  .dividerPadViewPic,
+  .call,
+  .chat,
+  .profile {
+    display: block;
+  }
 }
 @media screen and (min-width: 1120px) {
   body {
-    min-width: 1120px;
+    width: 1120px;
   }
 
   .upperMenu {
