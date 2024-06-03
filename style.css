@@ -124,7 +124,8 @@ button:active {
 
 @media screen and (max-width: 768px) {
   body {
-    width: 320px;
+    min-width: 320px;
+    max-width: 768px;
   }
 
   .article {
@@ -152,7 +153,8 @@ button:active {
 }
 @media screen and (min-width: 768px) {
   body {
-    width: 768px;
+    min-width: 768px;
+    max-width: 1120px;
   }
 
   .upperMenu {
@@ -192,7 +194,7 @@ button:active {
 }
 @media screen and (min-width: 1120px) {
   body {
-    width: 1120px;
+    min-width: 1120px;
   }
 
   .upperMenu {
