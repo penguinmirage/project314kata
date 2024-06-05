@@ -214,6 +214,9 @@ button:active {
     height: auto;
     margin-left: 0px;
   }
+  .hidden1 {
+    display: inline-block;
+  }
   .hidden2 {
     display: none;
   }
