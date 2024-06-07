@@ -30,6 +30,7 @@ body {
   height: 88px;
   background-color: #ffffff;
   align-items: center;
+  border-bottom: 1px solid #d9fff5;
 }
 
 .burgerLink:hover,
